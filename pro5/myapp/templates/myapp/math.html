@@ -1,0 +1,50 @@
+<html>
+<head>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            background-color:aqua;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box 
+        {
+            background-color: mediumvioletred; 
+            border-radius: 20px;
+            box-shadow:black; 
+            padding: 20px;
+            width: 300px;
+        }
+        h1
+        {
+            color:bisque;
+            text-align: center;
+            padding-top: 20px;
+        }
+        </style>
+</head>
+<body>
+    <div class="edge">
+    <div class="box">
+    <h1>B.NIHITHA RANI(212223040131)</h1>
+    <h2>SURFACE AREA OF RIGHT CYLINDER</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="formelt">
+        Radius: <input type="text" name="radius" value="{{r}}"></input><br/>
+    </div>
+    <div class="formelt">
+        Height: <input type="text" name="height" value="{{h}}"></input><br/></div>
+    <div class="formelt">
+    <input type="submit" value="Calculate"></input><br/></div>
+    <div class="formelt">
+        Area: <input type="text" name="area" value="{{area}}"></input><br/>
+    </div>
+</form></div>
+</div>
+</body>
+</html>
